@@ -13,4 +13,9 @@ public class Calculadora {
 	public int add(@WebParam(name="num1") int numero1, @WebParam(name="num2") int numero2){
 		return numero1 + numero2;
 	}
+	
+	@WebMethod(operationName = "subtrair")
+	public int subtrair(@WebParam(name="num1") int numero1, @WebParam(name="num2") int numero2){
+		return numero1 - numero2;
+	}
 }
